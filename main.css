@@ -4,7 +4,6 @@
 }
 
 html {
-  font-size: 0.75px;
   /*margin-left: -10px;*/
   font-family: sans-serif;
   color: white;
@@ -14,9 +13,7 @@ html {
 
 .container{
   margin-top: 74px;
-  /*margin-left: 0px;*/
-  /*margin-right: 0px;*/
-  font-size: 28rem;
+  font-size: 1rem;
 }
 
 .anchor{
@@ -29,13 +26,12 @@ html {
   background-repeat: no-repeat;
   background-size: 1920px auto;
   background-position: center;
-  /*padding: 3 3% 3% 3%;*/
   padding: 50px 50% 50px 50px;
-  height: 500px;
-  max-height: 500px;
+  height: 520px;
+  /*max-height: 520px;*/
 }
 
-.about-content{
+.pane{
   display: inline-block;
   position: relative;
   background-color: rgba(0,0,0,0.5);
@@ -43,10 +39,14 @@ html {
   height: 100%;
   padding: 20px 20px 20px 20px;
 }
+.pane h1{
+  /*text-transform: uppercase;*/
+  font-variant: small-caps;
+}
 
 a{
   color: #00ff8b;
-  font-size: 16rem;
+  font-size: 0.75rem;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
@@ -77,6 +77,15 @@ header{
   border-bottom: 2px solid rgba(255,255,255,0.15);
 }
 
-header img {
-  height: 14px;
+header > .monogram{
+  font-size: 0.8rem;
+}
+
+footer{
+  width: 100%;
+  padding: 30px 96px 30px 96px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.9);
+  border-top: 2px solid rgba(255,255,255,0.15);
 }
