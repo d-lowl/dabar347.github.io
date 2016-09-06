@@ -1,8 +1,10 @@
 <html>
 <head>
-  <link type="text/css" rel="stylesheet" href="main.css">
+  <link type="text/css" rel="stylesheet" href="css/main.css">
   <script>
-    window.addEventListener("hashchange", function() { scrollBy(0, -87) });
+    var shiftWindow = function() { scrollBy(0, -87) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
   </script>
 </head>
 
