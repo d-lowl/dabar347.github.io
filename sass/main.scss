@@ -1,10 +1,21 @@
 @import "gradient";
 
-$accentColor : lighten(rgb(239,0,40),0);
+@mixin border-radius($radius) {
+  // Direction has been omitted and happens to be a color-stop
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+$accentColor : #f91a45;//lighten(rgb(239,0,40),0);
 $baseColor: #FFFFFF;
 $backgroundColor-l: rgb(37,17,23);
 $backgroundColor-r: black;
-$backgroundColor: ($backgroundColor-l+$backgroundColor-r)*0.8;
+$paneBackgroundColor: rgb(44,17,19);
+$backgroundColor: ($backgroundColor-l+$backgroundColor-r)*0.5;
+$decentColor : rgba($baseColor, 0.5);
+
+$paneRoundedRadius: 5px;
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -16,6 +27,11 @@ html {
   background-color: $backgroundColor;
   margin-right: 0px;
   line-height: 1.5rem; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
 
 .container {
   max-width: 1300px;
@@ -43,9 +59,11 @@ section {
 .pane {
   display: inline-block;
   position: relative;
-  background-color: rgba($backgroundColor, 0.8);
+  background-color: rgba($paneBackgroundColor, 0.3);
   width: 100%;
-  padding: 20px 20px 20px 20px; }
+  padding: 20px 20px 20px 20px;
+  @include border-radius($paneRoundedRadius);
+}
 
 .light-pane {
   @extend .pane;
@@ -89,19 +107,22 @@ nav {
 
 .row{
   margin-bottom: 20px;
+  position: relative;
 }
 
 .col-3, .col-4{
   // float: left;
+  margin-left: 5px;
+  margin-right: 5px;
   @extend .pane;
 }
 
 .col-3{
-  width: 33.33333%;
+  width: calc(33.33333% - 10px);
 }
 
 .col-4{
-  width: 25%;
+  width: calc(25% - 10px);
 }
 
 header {
@@ -124,9 +145,51 @@ footer {
   padding: 30px 96px 30px 96px;
   top: 0;
   left: 0;
-  background-color: rgba($backgroundColor, 0.9);
-  opacity: 0.5;
   border-top: 2px solid rgba(255, 255, 255, 0.15); }
+
+#cases{
+  overflow: auto;
+  position: relative;
+
+  img {
+    height: 500px;
+    max-width: 100%;
+    float: right;
+  }
+
+  #caption.pane{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    background-color: rgba($paneBackgroundColor,0.8);
+    @include border-radius(0px);
+  }
+
+  #collab.pane{
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    bottom: 80px;
+    right: 50px;
+    background-color: rgba($paneBackgroundColor,0.8);
+    @include border-radius(0px);
+  }
+}
+
+#models{
+  .pane{
+    // min-height: 800px;
+    img{
+      max-height: 700px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
 
 #contacts{
   div{
@@ -135,10 +198,15 @@ footer {
     p{
       margin-bottom: 0px;
       margin-top: 0px;
-      font-size: 0.8rem;
+      @extend .decent;
     }
     p:last-of-type{
       color: $accentColor;
     }
   }
+}
+
+.decent {
+  font-size: 0.8rem;
+  color: $decentColor;
 }
