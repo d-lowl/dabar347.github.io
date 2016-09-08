@@ -37,3 +37,13 @@ function carouselPrevious(id){
   }
   list[current].setAttribute("class","current");
 }
+
+var ticks = 0;
+setInterval(function(){
+  if(++ticks >= 4)
+  {
+    ticks = 0;
+    carouselNext("cases");
+  }
+  carouselNext("models");
+},5000);

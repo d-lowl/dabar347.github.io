@@ -1,3 +1,18 @@
+button {
+  background-color: transparent;
+  border: 0px; }
+
+.left-arrow, .right-arrow {
+  position: absolute;
+  top: 300px; }
+
+.right-arrow {
+  right: 0px; }
+
+button:focus {
+  outline: none;
+  opacity: 0.8; }
+
 * {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box; }
@@ -33,7 +48,7 @@ section {
   padding: 50px 50px 50px 50px;
   position: relative; }
 
-.pane, .light-pane, .col-3, .col-4 {
+.pane, .col-3, .col-4 {
   display: inline-block;
   position: relative;
   background-color: rgba(44, 17, 19, 0.3);
@@ -42,9 +57,6 @@ section {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-
-.light-pane {
-  background-color: rgba(249, 26, 69, 0.1); }
 
 .logo {
   width: 100%; }
@@ -112,45 +124,42 @@ footer {
   left: 0;
   border-top: 2px solid rgba(255, 255, 255, 0.15); }
 
-#cases {
-  overflow: auto;
-  position: relative; }
-  #cases img {
-    height: 500px;
-    max-width: 100%;
-    float: right; }
-  #cases #caption.pane, #cases #caption.light-pane, #cases #caption.col-3, #cases #caption.col-4 {
-    position: absolute;
-    top: 250px;
-    left: 50px;
-    background-color: rgba(44, 17, 19, 0.8);
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px; }
-  #cases #collab.pane, #cases #collab.light-pane, #cases #collab.col-3, #cases #collab.col-4 {
-    position: absolute;
-    display: inline-block;
-    width: auto;
-    height: auto;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    bottom: 80px;
-    right: 50px;
-    background-color: rgba(44, 17, 19, 0.8);
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px; }
+#cases ol {
+  height: 500px;
+  padding: 0; }
+#cases li {
+  width: 100%; }
+#cases li img {
+  height: 500px;
+  max-width: 100%;
+  float: right; }
+#cases #caption.pane, #cases #caption.col-3, #cases #caption.col-4 {
+  position: absolute;
+  top: 180px;
+  padding-left: 80px;
+  background-color: rgba(44, 17, 19, 0.8);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
+#cases #collab.pane, #cases #collab.col-3, #cases #collab.col-4 {
+  position: absolute;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  bottom: 80px;
+  right: 0px;
+  background-color: rgba(44, 17, 19, 0.8);
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
 
 #models .carousel ol {
-  height: 700px;
-  position: relative;
-  overflow: visible; }
+  height: 700px; }
   #models .carousel ol li {
     position: absolute;
-    top: 0px;
-    list-style: none;
-    opacity: 0;
-    transition: all 0.2s ease; }
+    top: 0px; }
     #models .carousel ol li img {
       height: 700px;
       max-width: 100%;
@@ -158,6 +167,20 @@ footer {
       margin-left: auto;
       margin-right: auto; }
   #models .carousel ol li.current {
+    opacity: 1; }
+#models button {
+  top: 500px; }
+
+.carousel ol {
+  position: relative;
+  overflow: visible; }
+  .carousel ol li {
+    position: absolute;
+    top: 0px;
+    list-style: none;
+    opacity: 0;
+    transition: all 0.5s ease; }
+  .carousel ol li.current {
     opacity: 1; }
 
 #contacts div {

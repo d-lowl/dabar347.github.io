@@ -34,13 +34,35 @@
     <section id="cases">
       <h1>Cases</h1>
 
-      <img src="img/cases/tanuki.jpg">
-      <div class="pane narrowed" id="caption">
-        <h2>Title title here</h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur lorem sed neque imperdiet, eu ornare felis rutrum. Mauris vel aliquet tortor. Pellentesque at consectetur eros.
-      </div>
-      <div class="pane decent" id="collab">
-        Special for Two Weeks Game Challenge 8
+      <div class="carousel">
+        <ol>
+          <li class="current">
+            <img src="img/cases/tanuki.jpg">
+            <div class="pane narrowed" id="caption">
+              <h2>Title title here</h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur lorem sed neque imperdiet, eu ornare felis rutrum. Mauris vel aliquet tortor. Pellentesque at consectetur eros.
+            </div>
+            <div class="pane decent" id="collab">
+              Special for Two Weeks Game Challenge 8
+            </div>
+          </li>
+          <li>
+            <img src="img/cases/tanuki.jpg">
+            <div class="pane narrowed" id="caption">
+              <h2>Title title2222 here</h2>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur lorem sed neque imperdiet, eu ornare felis rutrum. Mauris vel aliquet tortor. Pellentesque at consectetur eros.
+            </div>
+            <div class="pane decent" id="collab">
+              Special for Two Weeks Game Challenge 8
+            </div>
+          </li>
+        </ol>
+        <button class="left-arrow">
+          <img src="img/left.svg" onclick="carouselPrevious('cases')">
+        </button>
+        <button class="right-arrow" onclick="carouselNext('cases')">
+          <img src="img/right.svg">
+        </button>
       </div>
     </section>
 
@@ -86,6 +108,13 @@
           <li class="current"><img src="img/models/burger.png"></li>
         </ol>
       </div>
+      <button class="left-arrow">
+        <img src="img/left.svg" onclick="carouselPrevious('models')">
+      </button>
+      <button class="right-arrow" onclick="carouselNext('models')">
+        <img src="img/right.svg">
+      </button>
+
     </section>
 
     <section id="contacts">
