@@ -6,6 +6,7 @@
     if (location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
   </script>
+  <script src="js/carousel.js"></script>
 </head>
 
 <body>
@@ -74,13 +75,16 @@
       </div>
     </section>
 
-    <section id="models" class="carousel">
+    <section id="models">
       <h1>3D Models</h1>
       <div class="narrowed">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur lorem sed neque imperdiet, eu ornare felis rutrum. Mauris vel aliquet tortor. Pellentesque at consectetur eros. Donec et erat vel ex accumsan sagittis sit amet in mi.
       </div>
-      <div class="pane">
-        <img src="img/models/well.png">
+      <div class="pane carousel">
+        <ol>
+          <li class=""><img src="img/models/well.png"></li>
+          <li class="current"><img src="img/models/burger.png"></li>
+        </ol>
       </div>
     </section>
 

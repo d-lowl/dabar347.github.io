@@ -141,11 +141,24 @@ footer {
     -moz-border-radius: 0px;
     border-radius: 0px; }
 
-#models .pane img, #models .light-pane img, #models .col-3 img, #models .col-4 img {
-  max-height: 700px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+#models .carousel ol {
+  height: 700px;
+  position: relative;
+  overflow: visible; }
+  #models .carousel ol li {
+    position: absolute;
+    top: 0px;
+    list-style: none;
+    opacity: 0;
+    transition: all 0.2s ease; }
+    #models .carousel ol li img {
+      height: 700px;
+      max-width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+  #models .carousel ol li.current {
+    opacity: 1; }
 
 #contacts div {
   display: inline-block;
