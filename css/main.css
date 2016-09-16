@@ -7,7 +7,7 @@ button {
   top: 300px; }
 
 .right-arrow {
-  right: 0px; }
+  right: 45px; }
 
 button:focus {
   outline: none;
@@ -125,8 +125,7 @@ footer {
   border-top: 2px solid rgba(255, 255, 255, 0.15); }
 
 #cases ol {
-  height: 500px;
-  padding: 0; }
+  height: 500px; }
 #cases li {
   width: 100%; }
 #cases li img {
@@ -159,13 +158,12 @@ footer {
   height: 700px; }
   #models .carousel ol li {
     position: absolute;
-    top: 0px; }
+    width: 100%;
+    top: 0px;
+    text-align: center; }
     #models .carousel ol li img {
       height: 700px;
-      max-width: 100%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto; }
+      max-width: 100%; }
   #models .carousel ol li.current {
     opacity: 1; }
 #models button {
@@ -173,7 +171,8 @@ footer {
 
 .carousel ol {
   position: relative;
-  overflow: visible; }
+  overflow: visible;
+  padding: 0; }
   .carousel ol li {
     position: absolute;
     top: 0px;

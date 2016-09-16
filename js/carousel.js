@@ -16,6 +16,7 @@ function carouselNext(id){
     current = 0;
   }
   list[current].setAttribute("class","current");
+  ticks = 0;
 }
 
 function carouselPrevious(id){
@@ -36,6 +37,7 @@ function carouselPrevious(id){
     current = length-1;
   }
   list[current].setAttribute("class","current");
+  ticks = 0;
 }
 
 var ticks = 0;
