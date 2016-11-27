@@ -45,7 +45,7 @@ setInterval(function(){
   if(++ticks >= 4)
   {
     ticks = 0;
-    carouselNext("cases");
+    // carouselNext("cases");
   }
-  carouselNext("models");
+  // carouselNext("models");
 },5000);

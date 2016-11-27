@@ -64,6 +64,10 @@ section {
 .narrowed {
   width: 60%; }
 
+.small-text {
+  color: #c0c0c0;
+  font-size: 0.75rem; }
+
 h1 {
   margin-top: auto;
   font-size: 1.8rem; }
@@ -122,7 +126,8 @@ footer {
   padding: 30px 96px 30px 96px;
   top: 0;
   left: 0;
-  border-top: 2px solid rgba(255, 255, 255, 0.15); }
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+  font-variant: small-caps; }
 
 #cases ol {
   height: 500px; }
@@ -134,7 +139,7 @@ footer {
   float: right; }
 #cases #caption.pane, #cases #caption.col-3, #cases #caption.col-4 {
   position: absolute;
-  top: 180px;
+  top: 135px;
   padding-left: 80px;
   background-color: rgba(44, 17, 19, 0.8);
   -webkit-border-radius: 0px;
@@ -157,7 +162,6 @@ footer {
 #models .carousel ol {
   height: 700px; }
   #models .carousel ol li {
-    position: absolute;
     width: 100%;
     top: 0px;
     text-align: center; }
@@ -169,18 +173,20 @@ footer {
 #models button {
   top: 500px; }
 
+q {
+  color: #c0c0c0; }
+
 .carousel ol {
   position: relative;
   overflow: visible;
   padding: 0; }
   .carousel ol li {
     position: absolute;
+    display: none;
     top: 0px;
-    list-style: none;
-    opacity: 0;
-    transition: all 0.5s ease; }
+    list-style: none; }
   .carousel ol li.current {
-    opacity: 1; }
+    display: inherit; }
 
 #contacts div {
   display: inline-block;

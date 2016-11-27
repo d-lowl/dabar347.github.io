@@ -14,8 +14,8 @@
     <a href="#about" class="monogram">M.Iakovlev</a>
     <nav>
       <a href="#cases">Cases</a>
-      <a href="#skills">Skills</a>
-      <a href="#models">3D Models</a>
+      <!-- <a href="#skills">Skills</a>
+      <a href="#models">3D Models</a> -->
       <a href="#contacts">Contacts</a>
 
     </nav>
@@ -25,7 +25,7 @@
       <section id="about">
         <div class="pane narrowed">
           <h1>Do what's right, the right way, at the right time</h1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur lorem sed neque imperdiet, eu ornare felis rutrum. Mauris vel aliquet tortor. Pellentesque at consectetur eros. Donec et erat vel ex accumsan sagittis sit amet in mi. Duis sit amet leo augue. Etiam eget mauris commodo, posuere tortor quis, tempus risus. Nulla dapibus justo hendrerit ligula feugiat facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque vitae mi eu leo gravida volutpat vitae nec massa. Nullam lacinia commodo purus, ut tincidunt erat commodo eu. Proin congue non dui ut lacinia. Etiam tempor, erat et elementum vestibulum, ante turpis convallis mi, sed pharetra nunc mauris ut tellus.
+          <p><q>Many are able to bring chaos into order. But bringing order into greater order, that's what the true art of technology is about now.</q></p>
         </div>
       </section>
     </div>
@@ -37,32 +37,65 @@
       <div class="carousel">
         <ol>
           <li class="current">
-            <img src="img/cases/tanuki.jpg">
+            <img src="img/cases/intertap.gif">
             <div class="pane narrowed" id="caption">
-              <h2>Tanuki Drunk Racing</h2>
-              Unity3D racing (infinite runner type) game<br>
-              Modeling: MagicaVoxel<br>
-              Music: Royalty free (put source)
+              <h2>Intertap</h2>
+              <p>Multiplayer highly competitive mobile game.</p>
+              <p><q>The gameplay essence is hardcore-battle between two players. You need to tap the screen to build up bombs and defend yourself from you rivals' bombs. The great solution for deciding arguments in a happy get-together.</q></p>
+              <p>
+                Client: Unity (C#)
+                <br/>
+                Server: Node.js, Restify, MQTT, PostgreSQL
+              </p>
+              <a href="https://www.behance.net/gallery/23216201/Intertap-Game-Conception">Behance link</a> (design details)
+              <br/>
+              <a href="https://play.google.com/store/apps/details?id=com.cupboard.Intertap">Google Play</a>
             </div>
             <div class="pane decent" id="collab">
-              Special for Two Weeks Game Challenge 8
+              In collaboration with <a href = "http://oz.digital/">Oz Interactive</a>
+            </div>
+          </li>
+          <li>
+            <img src="img/cases/weplay.jpg">
+            <div class="pane narrowed" id="caption">
+              <h2>WePlay</h2>
+              <p>
+                Quiz game system to be used in cinema theatres (questions appear on a cinema screen and players/viewers answer from their phones). The system was used as part of indirect advertising campaign.
+              </p>
+              <p>
+                Technologies: MEAN Stack (MongoDB, Express.js, AngularJS, Node.js)
+              </p>
+            </div>
+            <div class="pane decent" id="collab">
+              In collaboration with <a href = "http://oz.digital/">Oz Interactive</a>
             </div>
           </li>
           <li>
             <img src="img/cases/tanuki.jpg">
             <div class="pane narrowed" id="caption">
-              <h2>WePlay</h2>
-              Interactive quiz systems for cinema theatres in Moscow and St. Petersburg. Where questions appear on cinema screen and viewers answer from their smartphones. With history of games and leaderboard applying<br>
-              MEAN stack.
-
+              <h2>Tanuki Drunk Racing</h2>
+              <p>
+                Arcade racing game (idea's partially inspired by Japanese mythology).
+              </p>
+              <p>
+                Game Jam Topic: Luck
+                <br/>
+                Game Engine: Unity
+                <br/>
+                Graphics/Modeling: MagicaVoxel
+              </p>
+              <p>
+                <a href="https://drive.google.com/open?id=0B37RnTR5_XTEcWpSN2E0eXVNbDA">Download for Win, Mac or Linux</a>
+              </p>
+              <p class="small-text">* the game was not released for PS 4</p>
             </div>
             <div class="pane decent" id="collab">
-              In collaboration with Oz Interactive
+              Special for Two Weeks Game Challenge 7
             </div>
           </li>
         </ol>
-        <button class="left-arrow">
-          <img src="img/left.svg" onclick="carouselPrevious('cases')">
+        <button class="left-arrow" onclick="carouselPrevious('cases')">
+          <img src="img/left.svg">
         </button>
         <button class="right-arrow" onclick="carouselNext('cases')">
           <img src="img/right.svg">
@@ -70,18 +103,18 @@
       </div>
     </section>
 
-    <section id="skills">
+    <!-- <section id="skills">
       <h1>Skills here</h1>
       <div class="row">
         <h2>Desktop</h2>
         <div class="col-3">
-          <img src="img/RED-logo.png" class="logo">
+          <img src="img/Node.js_logo.svg" class="logo">
         </div
         ><div class="col-3">
-          <img src="img/RED-logo.png" class="logo">
+          <img src="img/Node.js_logo.svg" class="logo">
         </div
         ><div class="col-3">
-          <img src="img/RED-logo.png" class="logo">
+          <img src="img/Node.js_logo.svg" class="logo">
         </div>
       </div>
       <div class="row">
@@ -99,9 +132,9 @@
           <img src="img/RED-logo.png" class="logo">
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="models">
+    <!-- <section id="models">
       <h1>3D Models</h1>
       <div class="narrowed">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur lorem sed neque imperdiet, eu ornare felis rutrum. Mauris vel aliquet tortor. Pellentesque at consectetur eros. Donec et erat vel ex accumsan sagittis sit amet in mi.
@@ -112,14 +145,14 @@
           <li class="current"><img src="img/models/burger.png"></li>
         </ol>
       </div>
-      <button class="left-arrow">
-        <img src="img/left.svg" onclick="carouselPrevious('models')">
+      <button class="left-arrow" onclick="carouselPrevious('models')">
+        <img src="img/left.svg">
       </button>
       <button class="right-arrow" onclick="carouselNext('models')">
         <img src="img/right.svg">
       </button>
 
-    </section>
+    </section> -->
 
     <section id="contacts">
       <h1>Contacts</h1>
@@ -128,14 +161,18 @@
         <p>mikhail@sihvi.com</p>
       </div>
       <div>
-        <p>call:</p>
+        <p>call (UK):</p>
+        <p>+447472071598</p>
+      </div>
+      <div>
+        <p>call (Russia)</p>
         <p>+79091450051</p>
       </div>
     </section>
   </div>
   <footer>
     <div class="decent">
-      Footer
+      © 2016 Mikhail Iakovlev
     </div>
   </footer>
 </body>
